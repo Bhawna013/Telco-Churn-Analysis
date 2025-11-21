@@ -138,12 +138,6 @@ The Power BI dashboard is divided into **two analytical pages**:
 6. **Mid-Term Engagement:** Offer personalized offers to 2–3 year customers.
 7. **Cross-Sell Add-Ons:** Promote Online Security and Backup services to stabilize accounts.
 
----
-
-## 📸 Dashboard Snapshots
-| **Customer Overview (Page 1)** | **Deep-Dive Analysis (Page 2)** |
-|:-------------------------------:|:-------------------------------:|
-| <img width="1141" height="655" alt="image" src="https://github.com/user-attachments/assets/ab844fbf-bd1f-4fea-ae2c-a7a1ea922be2" /> | <img width="1162" height="655" alt="image" src="https://github.com/user-attachments/assets/1dd1a65c-d2a9-430a-9ee4-cd851e59ed8a" /> |
 
 ---
 
@@ -153,17 +147,3 @@ By implementing targeted strategies based on these insights, telecom companies c
 
 ---
 
-## 👤 Author
-**Data Analyst:** *Bhawna Kumari*  
-📧 **Email:** [bhawnak0313@gmail.com]
-🔗 **LinkedIn:** https://www.linkedin.com/in/bhawna-kumari-data-analyst/(#)  
-💻 **GitHub:** https://github.com/Bhawna013(#)
-
----
-
-## 🏷️ Tags
-`Power BI` • `Customer Churn` • `Telecom Analytics` • `Data Visualization` • `DAX` • `Business Intelligence` • `Predictive Analytics`
-
----
-
-⭐ *If you found this project insightful, please give it a star on GitHub!*
