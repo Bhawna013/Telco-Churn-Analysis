@@ -1,15 +1,34 @@
 
-# 📊 Telco Customer Churn Analysis Dashboard
+# Telco Customer Churn Analysis Dashboard | Power BI
 
-## 🧩 Project Overview
-Customer churn is one of the most pressing challenges in the telecom industry, directly impacting revenue and customer lifetime value.  
-This project analyzes the **Telco Customer Churn dataset (Kaggle)** using **Power BI** to uncover the key reasons behind churn and propose data-driven retention strategies.
+##  Project Overview
+Customer churn is one of the biggest challenges faced by telecommunications companies. Acquiring a new customer is significantly more expensive than retaining an existing one, making customer retention a critical business objective.
 
-The Power BI dashboard is divided into **two analytical pages**:
-1. **Customer Overview Dashboard** – Who is churning and why?  
-2. **Deep-Dive Dashboard** – What services, contracts, and behaviors influence churn the most?
+This project analyzes customer behavior using the Telco Customer Churn Dataset from Kaggle and presents an interactive Power BI dashboard that identifies the major factors contributing to churn. The dashboard enables business stakeholders to monitor churn trends, understand customer behavior, quantify revenue loss, and develop targeted retention strategies.
+
 
 ---
+## Business Problem 
+Telecommunication companies lose substantial recurring revenue when customers discontinue their services. Understanding **who is leaving, why they are leaving, and what business actions can reduce churn** is essential for improving customer retention and maximizing customer lifetime value.
+
+This project addresses the following business questions:
+
+Which customers are most likely to churn?
+Which customer characteristics influence churn?
+Which services contribute to customer retention?
+How much revenue is lost because of churn?
+What actions can reduce future churn?
+
+---
+## Project Objectives
+
+- Analyze customer demographics and subscription behavior.
+- Identify high-risk customer segments.
+- Measure revenue loss caused by customer churn.
+- Evaluate how contracts, payment methods, tenure, and services influence churn.
+- Provide actionable recommendations for improving customer retention.
+
+--- 
 
 ## 🛠️ Tools & Technologies
 - **Dataset**: [Telco Customer Churn – Kaggle](https://www.kaggle.com/blastchar/telco-customer-churn)
@@ -19,12 +38,26 @@ The Power BI dashboard is divided into **two analytical pages**:
 - **Visualization Types**: Cards, Donut Charts, Bar Charts, Line Charts, Matrix, and Waterfall Charts
 
 ---
+## Data Preparation
+
+Data preprocessing was performed using Power Query before loading the dataset into Power BI.
+
+The cleaning process included:
+- Removing unnecessary columns
+- Verifying data types
+- Handling missing values
+- Standardizing categorical values
+- Preparing fields for analysis
+- Creating tenure groups for customer segmentation
 
 
-## 📊 Dashboard Overview
+---
+## Dashboard Overview
 
 ### 🟠 **Customer Overview Dashboard**
 <img width="1141" height="655" alt="image" src="https://github.com/user-attachments/assets/ab844fbf-bd1f-4fea-ae2c-a7a1ea922be2" />
+
+This dashboard provides a high-level overview of customer churn by analyzing demographics, subscription behavior, contracts, payment methods, and internet services.
 
 #### **KPIs**
 | Metric | Description | Value |
@@ -36,114 +69,159 @@ The Power BI dashboard is divided into **two analytical pages**:
 | **Direct Revenue Loss** | Immediate revenue loss | **$0.14M** |
 
 #### **Visual Insights**
-- **Demographics**:  
-  - 42% of churned customers are **Senior Citizens** (most vulnerable group).  
-  - Only 6.5% of churned customers have **Dependents** → family plans reduce churn.  
-  - Churn is **evenly distributed by gender**.  
+ ##### Customer Demographics
 
-- **Tenure (Subscription Time)**:  
-  - Majority of churn happens within the **first year (<1 year)**.  
-  - Churn steadily decreases as tenure increases.  
+1. **Senior Citizens**
+- Approximately **42%** of churned customers are senior citizens, making this demographic one of the highest-risk customer groups.
 
-- **Payment & Billing**:  
-  - **Electronic Check** users make up **33.6%** of churners — highest risk payment method.  
-  - **Paperless billing users (59%)** churn more, possibly due to digital-first behavior.  
+ **Business Insight**
+-Senior customers may require simpler plans, improved customer support, or better onboarding experiences.
 
-- **Contract Type**:  
-  - **55% of churn** comes from **Month-to-Month contracts**.  
-  - Customers with **1-year or 2-year contracts** churn less → stronger customer retention.  
+2. **Dependents**
+- Only **6.5%** of churned customers have dependents.
 
-- **Internet Service Type**:  
-  - **Fiber Optic** users churn the most (**43.9%**).  
-  - **DSL users** show moderate churn (**34.3%**).  
-  - **No internet service** users have the lowest churn (**21.6%**).  
+**Business Insight**
+- Customers with family members tend to remain subscribed longer because switching providers affects multiple users.
 
-#### 🧠 **Key Insights**
-1. **Early churn** is the biggest issue — most customers leave within the **first year**.  
-2. **Senior citizens** are a high-risk demographic.  
-3. **Electronic check** and **month-to-month contract holders** dominate churn.  
-4. **Fiber optic users** show higher dissatisfaction or price sensitivity.  
-5. **Dependents reduce churn** – family accounts are more loyal.  
+3. **Gender**
+- Customer churn is distributed almost equally across male and female customers.
 
-#### 💡 **Recommendations**
-- **Early Retention:** Create onboarding and loyalty programs for customers in their first 6–12 months.  
-- **Target Senior Citizens:** Offer simplified plans and priority support.  
-- **Payment Incentives:** Encourage auto-pay and digital payments instead of electronic checks.  
-- **Contract Renewal Offers:** Provide discounts for customers switching to yearly contracts.  
-- **Service Quality Check:** Investigate Fiber Optic service issues or pricing dissatisfaction.  
+**Business Insight**
+- Gender does not appear to be a strong predictor of churn.
+
+---
+ ##### Customer Tenure
+- The majority of churn occurs during the customer's **first year.**
+- Churn steadily decreases as customer tenure increases.
+
+**Business Insight**
+- The onboarding experience is one of the most important stages in the customer lifecycle.
+- Improving customer engagement during the first 6–12 months can significantly reduce churn.
+
+---
+ ##### Payment Methods
+- Electronic Check users represent the largest proportion of churned customers.
+
+**Business Insight**
+- Manual payment methods often indicate lower customer commitment compared to automatic payment options such as bank transfer or credit card auto-pay.
+- Encouraging customers to adopt automatic payments may improve retention.
+
+---
+ ##### Contract Types
+- Month-to-Month contracts account for approximately 55% of all churned customers.
+- Customers with one-year and two-year contracts exhibit significantly lower churn.
+
+**Business Insight**
+- Long-term contracts increase customer commitment and reduce the likelihood of switching providers.
+
+---
+ ##### Internet Service
+ - Fiber Optic customers experience the highest churn.
+   
+| Internet Service	| Churn Share |
+| Fiber Optic	      | 43.9%       |
+| DSL	              | 34.3%       |
+| No Internet	      | 21.6%       |
+
+**Business Insight**
+Higher churn among Fiber Optic customers may indicate pricing concerns, service quality issues, or higher customer expectations that require further investigation.
 
 ---
 
 ### 🟣 **Deep-Dive Dashboard**
 <img width="1162" height="655" alt="image" src="https://github.com/user-attachments/assets/1dd1a65c-d2a9-430a-9ee4-cd851e59ed8a" />
 
+The second dashboard focuses on understanding the behavioral patterns behind customer churn and identifying revenue protection opportunities.
+
 #### **Visual Insights**
-- **Revenue Loss by Payment Method (Waterfall Chart):**  
-  - **Electronic check** causes the largest revenue loss (~$84K).  
-  - **Mailed check** and **credit card** contribute smaller amounts.  
+1. **Revenue Loss by Payment Method (Waterfall Chart):**  
+ - A Waterfall Chart illustrates the contribution of each payment method to total revenue loss.
+ - Electronic Check customers contribute the highest revenue loss.
+**Business Insight**
+- Reducing churn among Electronic Check users would provide the greatest financial benefit.
+---
 
-- **Churn by Number of Services (Bar Chart):**  
-  - Customers with **2–3 services (38%)** churn the most.  
-  - Customers with **6+ services (20%)** churn the least → more engaged, higher retention.  
-
-- **Churn Count by Risk Segment (Bar Chart):**  
-  - **Medium-risk** customers represent the highest churn count.  
-  - **High-risk** and **low-risk** customers show similar churn volumes.  
-
-- **Churn Rate by Tenure (Line Area Chart):**  
-  - Churn peaks around **2–3 years**, then gradually decreases after **4+ years**.  
-
-- **Churn by Service Combination (Matrix):**  
-  - Customers **without Online Security or Backup** churn more.  
-  - Those with both services retained better.  
-
-- **Churn Count by Contract (Bar Chart):**  
-  - Confirms that **Month-to-Month** contracts dominate churn count.  
-
-#### 🧠 **Key Insights**
-1. **Revenue concentration risk:** Most churn-related revenue loss comes from **Electronic check** users.  
-2. **Service engagement:** Customers with **multiple add-on services** are less likely to churn.  
-3. **Churn peaks around 2–3 years** tenure — need for mid-lifecycle engagement.  
-4. **Medium-risk customers** make up the bulk of churn → an overlooked retention opportunity.  
-5. **Security/Backup add-ons** improve loyalty → cross-selling can reduce churn.  
-
-#### 💡 **Recommendations**
-- **Payment Strategy:** Encourage safe auto-pay methods to reduce electronic check dependency.  
-- **Customer Lifecycle Management:** Focus engagement around **2–3 years tenure** with renewal rewards or upgrade offers.  
-- **Cross-Selling:** Bundle **Online Security and Backup** services for better retention.  
-- **Medium-Risk Focus:** Target personalized campaigns to medium-risk segments before they escalate.  
-- **Revenue Protection:** Identify top revenue customers at churn risk and offer retention incentives.  
+2. **Churn by Number of Services (Bar Chart):**  
+- Customers subscribed to 2–3 services experience the highest churn.
+- Customers using 6 or more services exhibit the lowest churn.
+**Business Insight**
+- Customers with multiple products become more engaged with the company's ecosystem, making them less likely to switch providers.
+- Cross-selling additional services can improve retention.
 
 ---
 
-## 📈 Combined Key Insights
-| Theme | Key Insight | Impact |
-|--------|--------------|--------|
-| **Tenure** | Highest churn <1 year; spikes again around 2–3 years | Early-stage onboarding and mid-term re-engagement required |
-| **Demographics** | Senior citizens churn the most | Require dedicated plans/support |
-| **Payment** | Electronic check users are most churn-prone | Move users to secure auto-pay methods |
-| **Contracts** | Month-to-month has 55% churn rate | Push long-term contracts with incentives |
-| **Internet Type** | Fiber optic users churn most | Evaluate pricing and service satisfaction |
-| **Add-On Services** | Security/Backup add-ons reduce churn | Promote bundled plans |
-| **Revenue Loss** | $1.67M lost annually | Prioritize high-value churn prevention |
+3. **Churn Count by Risk Segment (Bar Chart):**  
+- Medium-risk customers account for the highest number of churn cases.
+**Business Insight**
+- Retention campaigns often focus only on high-risk customers, while medium-risk customers represent a significant opportunity for proactive intervention.
 
 ---
 
-## 💡 Overall Recommendations
-1. **Enhance Onboarding:** Focus on customer experience in the first 6 months.
-2. **Build Loyalty:** Reward tenure with discounts or free upgrades.
-3. **Contract Optimization:** Convert short-term to long-term contracts with incentive programs.
-4. **Improve Service Quality:** Especially for fiber optic customers.
-5. **Digital Retention:** Create tailored digital loyalty campaigns for paperless billing users.
-6. **Mid-Term Engagement:** Offer personalized offers to 2–3 year customers.
-7. **Cross-Sell Add-Ons:** Promote Online Security and Backup services to stabilize accounts.
+4. **Churn Rate by Tenure (Line Area Chart):**
+- Customer churn peaks around 2–3 years before gradually declining.
+**Business Insight**
+- Customers often reconsider their service provider after remaining with the company for several years. Loyalty rewards and contract renewal campaigns can improve retention during this stage.
+
+---
+
+5. **Churn by Service Combination (Matrix):**
+- Customers without **Online Security** or **Online Backup** services demonstrate higher churn.
+- Customers subscribed to these services remain more loyal.
+**Business Insight**
+- Bundling value-added services increases customer engagement and strengthens long-term retention.
+
+---
+
+6. **Churn Count by Contract (Bar Chart):**
+- The deep-dive dashboard confirms that Month-to-Month customers continue to represent the largest share of churn.
+- This reinforces the findings from the overview dashboard.
+
+---
+
+#### **Business Insights**  
+
+- Customer churn is highest during the first year of subscription.
+- Senior citizens represent the highest-risk demographic segment.
+- Month-to-Month contracts experience substantially higher churn than long-term contracts.
+- Electronic Check customers contribute the greatest revenue loss.
+- Fiber Optic users exhibit the highest churn among internet service types.
+- Customers using multiple services demonstrate stronger retention.
+- Online Security and Online Backup services are associated with lower churn rates.
+- Approximately **$1.67 million** in annual revenue is at risk due to customer churn.
 
 
 ---
 
-## 🏁 Conclusion
-The **Telco Customer Churn Dashboard** provides a comprehensive view of customer behavior, revealing that **contract type, tenure, payment method, and service engagement** are the strongest predictors of churn.  
-By implementing targeted strategies based on these insights, telecom companies can significantly reduce churn and protect an estimated **$1.67M in annual revenue**.
+####  **Business Recommendations**
+
+1. **Improve Customer Onboarding**
+- Develop onboarding programs during the first year to increase customer satisfaction and reduce early churn.
+
+2. **Encourage Long-Term Contracts**
+- Offer discounts, loyalty rewards, or bundled benefits for customers upgrading to annual contracts.
+
+3. **Promote Automatic Payments**
+- Encourage Electronic Check users to adopt AutoPay or digital payment methods through incentives.
+
+4. **Improve Fiber Optic Experience**
+- Investigate customer feedback related to pricing, service quality, and technical support for Fiber Optic users.
+
+5. **Expand Cross-Selling**
+- Bundle Online Security, Online Backup, Device Protection, and Streaming services to increase customer engagement.
+
+6. **Target Medium-Risk Customers**
+- Launch personalized retention campaigns before medium-risk customers transition into high-risk segments.
+
+---
+## Project Outcome
+
+This dashboard transforms raw customer data into actionable business intelligence.
+
+The analysis highlights that **customer tenure, contract type, payment method, internet service, and service adoption are the strongest indicators of churn.**
+
+By implementing targeted retention strategies based on these insights, a telecom company can improve customer loyalty, reduce revenue loss, and make more informed business decisions.
+
+
 
 ---
 
