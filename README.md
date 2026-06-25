@@ -118,7 +118,8 @@ This dashboard provides a high-level overview of customer churn by analyzing dem
  ##### Internet Service
  - Fiber Optic customers experience the highest churn.
    
-| Internet Service	| Churn Share |
+| **Internet Service**	| **Churn Share** |
+|----------------------|-----------------|
 | Fiber Optic	      | 43.9%       |
 | DSL	              | 34.3%       |
 | No Internet	      | 21.6%       |
