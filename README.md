@@ -138,6 +138,7 @@ The second dashboard focuses on understanding the behavioral patterns behind cus
 1. **Revenue Loss by Payment Method (Waterfall Chart):**  
  - A Waterfall Chart illustrates the contribution of each payment method to total revenue loss.
  - Electronic Check customers contribute the highest revenue loss.
+
 **Business Insight**
 - Reducing churn among Electronic Check users would provide the greatest financial benefit.
 ---
@@ -145,6 +146,7 @@ The second dashboard focuses on understanding the behavioral patterns behind cus
 2. **Churn by Number of Services (Bar Chart):**  
 - Customers subscribed to 2–3 services experience the highest churn.
 - Customers using 6 or more services exhibit the lowest churn.
+
 **Business Insight**
 - Customers with multiple products become more engaged with the company's ecosystem, making them less likely to switch providers.
 - Cross-selling additional services can improve retention.
@@ -153,6 +155,7 @@ The second dashboard focuses on understanding the behavioral patterns behind cus
 
 3. **Churn Count by Risk Segment (Bar Chart):**  
 - Medium-risk customers account for the highest number of churn cases.
+
 **Business Insight**
 - Retention campaigns often focus only on high-risk customers, while medium-risk customers represent a significant opportunity for proactive intervention.
 
@@ -160,6 +163,7 @@ The second dashboard focuses on understanding the behavioral patterns behind cus
 
 4. **Churn Rate by Tenure (Line Area Chart):**
 - Customer churn peaks around 2–3 years before gradually declining.
+
 **Business Insight**
 - Customers often reconsider their service provider after remaining with the company for several years. Loyalty rewards and contract renewal campaigns can improve retention during this stage.
 
@@ -168,6 +172,7 @@ The second dashboard focuses on understanding the behavioral patterns behind cus
 5. **Churn by Service Combination (Matrix):**
 - Customers without **Online Security** or **Online Backup** services demonstrate higher churn.
 - Customers subscribed to these services remain more loyal.
+
 **Business Insight**
 - Bundling value-added services increases customer engagement and strengthens long-term retention.
 
